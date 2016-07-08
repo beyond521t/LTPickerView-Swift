@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6289C7A1D266807001B3D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6289C791D266807001B3D6D /* AppDelegate.swift */; };
+		A6289C7C1D266807001B3D6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6289C7B1D266807001B3D6D /* ViewController.swift */; };
+		A6289C7F1D266807001B3D6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6289C7D1D266807001B3D6D /* Main.storyboard */; };
+		A6289C811D266807001B3D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6289C801D266807001B3D6D /* Assets.xcassets */; };
+		A6289C841D266807001B3D6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6289C821D266807001B3D6D /* LaunchScreen.storyboard */; };
+		A6289C8F1D266807001B3D6D /* LTPickerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6289C8E1D266807001B3D6D /* LTPickerViewTests.swift */; };
+		A6289C9A1D266807001B3D6D /* LTPickerViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6289C991D266807001B3D6D /* LTPickerViewUITests.swift */; };
+		A6D25B741D2F9BDE00821227 /* AttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D25B731D2F9BDE00821227 /* AttributedString.m */; };
+		A6FECBEB1D2FF067009671D1 /* LTPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FECBE61D2FF067009671D1 /* LTPickerView.swift */; };
+		A6FECBEC1D2FF067009671D1 /* LTDatePickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FECBE81D2FF067009671D1 /* LTDatePickerModel.swift */; };
+		A6FECBED1D2FF067009671D1 /* LTPickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FECBE91D2FF067009671D1 /* LTPickerModel.swift */; };
+		A6FECBEE1D2FF067009671D1 /* LTPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FECBEA1D2FF067009671D1 /* LTPickerViewModel.swift */; };
+		A6FECBF21D2FFC1E009671D1 /* LTBlockAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FECBF01D2FFC1E009671D1 /* LTBlockAlertView.swift */; };
+		A6FECBF31D2FFC1E009671D1 /* LTBlockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FECBF11D2FFC1E009671D1 /* LTBlockButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6289C8B1D266807001B3D6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6289C6E1D266807001B3D6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6289C751D266807001B3D6D;
+			remoteInfo = LTPickerView;
+		};
+		A6289C961D266807001B3D6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6289C6E1D266807001B3D6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6289C751D266807001B3D6D;
+			remoteInfo = LTPickerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6289C761D266807001B3D6D /* LTPickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTPickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6289C791D266807001B3D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6289C7B1D266807001B3D6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6289C7E1D266807001B3D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6289C801D266807001B3D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6289C831D266807001B3D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6289C851D266807001B3D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6289C8A1D266807001B3D6D /* LTPickerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTPickerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6289C8E1D266807001B3D6D /* LTPickerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTPickerViewTests.swift; sourceTree = "<group>"; };
+		A6289C901D266807001B3D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6289C951D266807001B3D6D /* LTPickerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTPickerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6289C991D266807001B3D6D /* LTPickerViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTPickerViewUITests.swift; sourceTree = "<group>"; };
+		A6289C9B1D266807001B3D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6D25B711D2F9BDE00821227 /* LTPickerView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LTPickerView-Bridging-Header.h"; sourceTree = "<group>"; };
+		A6D25B721D2F9BDE00821227 /* AttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedString.h; sourceTree = "<group>"; };
+		A6D25B731D2F9BDE00821227 /* AttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedString.m; sourceTree = "<group>"; };
+		A6FECBE61D2FF067009671D1 /* LTPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTPickerView.swift; sourceTree = "<group>"; };
+		A6FECBE81D2FF067009671D1 /* LTDatePickerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTDatePickerModel.swift; sourceTree = "<group>"; };
+		A6FECBE91D2FF067009671D1 /* LTPickerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTPickerModel.swift; sourceTree = "<group>"; };
+		A6FECBEA1D2FF067009671D1 /* LTPickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTPickerViewModel.swift; sourceTree = "<group>"; };
+		A6FECBF01D2FFC1E009671D1 /* LTBlockAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTBlockAlertView.swift; sourceTree = "<group>"; };
+		A6FECBF11D2FFC1E009671D1 /* LTBlockButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTBlockButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6289C731D266807001B3D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6289C871D266807001B3D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6289C921D266807001B3D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6289C6D1D266807001B3D6D = {
+			isa = PBXGroup;
+			children = (
+				A6289C781D266807001B3D6D /* LTPickerView */,
+				A6289C8D1D266807001B3D6D /* LTPickerViewTests */,
+				A6289C981D266807001B3D6D /* LTPickerViewUITests */,
+				A6289C771D266807001B3D6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6289C771D266807001B3D6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6289C761D266807001B3D6D /* LTPickerView.app */,
+				A6289C8A1D266807001B3D6D /* LTPickerViewTests.xctest */,
+				A6289C951D266807001B3D6D /* LTPickerViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6289C781D266807001B3D6D /* LTPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				A6FECBEF1D2FFC1E009671D1 /* LTBlock */,
+				A6FECBE51D2FF067009671D1 /* LTPickerView */,
+				A6289C791D266807001B3D6D /* AppDelegate.swift */,
+				A6289C7B1D266807001B3D6D /* ViewController.swift */,
+				A6D25B721D2F9BDE00821227 /* AttributedString.h */,
+				A6D25B731D2F9BDE00821227 /* AttributedString.m */,
+				A6289C7D1D266807001B3D6D /* Main.storyboard */,
+				A6289C801D266807001B3D6D /* Assets.xcassets */,
+				A6289C821D266807001B3D6D /* LaunchScreen.storyboard */,
+				A6289C851D266807001B3D6D /* Info.plist */,
+				A6D25B711D2F9BDE00821227 /* LTPickerView-Bridging-Header.h */,
+			);
+			path = LTPickerView;
+			sourceTree = "<group>";
+		};
+		A6289C8D1D266807001B3D6D /* LTPickerViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6289C8E1D266807001B3D6D /* LTPickerViewTests.swift */,
+				A6289C901D266807001B3D6D /* Info.plist */,
+			);
+			path = LTPickerViewTests;
+			sourceTree = "<group>";
+		};
+		A6289C981D266807001B3D6D /* LTPickerViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6289C991D266807001B3D6D /* LTPickerViewUITests.swift */,
+				A6289C9B1D266807001B3D6D /* Info.plist */,
+			);
+			path = LTPickerViewUITests;
+			sourceTree = "<group>";
+		};
+		A6FECBE51D2FF067009671D1 /* LTPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				A6FECBE61D2FF067009671D1 /* LTPickerView.swift */,
+				A6FECBE71D2FF067009671D1 /* PickerModel */,
+			);
+			path = LTPickerView;
+			sourceTree = "<group>";
+		};
+		A6FECBE71D2FF067009671D1 /* PickerModel */ = {
+			isa = PBXGroup;
+			children = (
+				A6FECBE91D2FF067009671D1 /* LTPickerModel.swift */,
+				A6FECBEA1D2FF067009671D1 /* LTPickerViewModel.swift */,
+				A6FECBE81D2FF067009671D1 /* LTDatePickerModel.swift */,
+			);
+			path = PickerModel;
+			sourceTree = "<group>";
+		};
+		A6FECBEF1D2FFC1E009671D1 /* LTBlock */ = {
+			isa = PBXGroup;
+			children = (
+				A6FECBF01D2FFC1E009671D1 /* LTBlockAlertView.swift */,
+				A6FECBF11D2FFC1E009671D1 /* LTBlockButton.swift */,
+			);
+			path = LTBlock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6289C751D266807001B3D6D /* LTPickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6289C9E1D266807001B3D6D /* Build configuration list for PBXNativeTarget "LTPickerView" */;
+			buildPhases = (
+				A6289C721D266807001B3D6D /* Sources */,
+				A6289C731D266807001B3D6D /* Frameworks */,
+				A6289C741D266807001B3D6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LTPickerView;
+			productName = LTPickerView;
+			productReference = A6289C761D266807001B3D6D /* LTPickerView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6289C891D266807001B3D6D /* LTPickerViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6289CA11D266807001B3D6D /* Build configuration list for PBXNativeTarget "LTPickerViewTests" */;
+			buildPhases = (
+				A6289C861D266807001B3D6D /* Sources */,
+				A6289C871D266807001B3D6D /* Frameworks */,
+				A6289C881D266807001B3D6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6289C8C1D266807001B3D6D /* PBXTargetDependency */,
+			);
+			name = LTPickerViewTests;
+			productName = LTPickerViewTests;
+			productReference = A6289C8A1D266807001B3D6D /* LTPickerViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6289C941D266807001B3D6D /* LTPickerViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6289CA41D266807001B3D6D /* Build configuration list for PBXNativeTarget "LTPickerViewUITests" */;
+			buildPhases = (
+				A6289C911D266807001B3D6D /* Sources */,
+				A6289C921D266807001B3D6D /* Frameworks */,
+				A6289C931D266807001B3D6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6289C971D266807001B3D6D /* PBXTargetDependency */,
+			);
+			name = LTPickerViewUITests;
+			productName = LTPickerViewUITests;
+			productReference = A6289C951D266807001B3D6D /* LTPickerViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6289C6E1D266807001B3D6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = devtao;
+				TargetAttributes = {
+					A6289C751D266807001B3D6D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A6289C891D266807001B3D6D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A6289C751D266807001B3D6D;
+					};
+					A6289C941D266807001B3D6D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A6289C751D266807001B3D6D;
+					};
+				};
+			};
+			buildConfigurationList = A6289C711D266807001B3D6D /* Build configuration list for PBXProject "LTPickerView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6289C6D1D266807001B3D6D;
+			productRefGroup = A6289C771D266807001B3D6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6289C751D266807001B3D6D /* LTPickerView */,
+				A6289C891D266807001B3D6D /* LTPickerViewTests */,
+				A6289C941D266807001B3D6D /* LTPickerViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6289C741D266807001B3D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6289C841D266807001B3D6D /* LaunchScreen.storyboard in Resources */,
+				A6289C811D266807001B3D6D /* Assets.xcassets in Resources */,
+				A6289C7F1D266807001B3D6D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6289C881D266807001B3D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6289C931D266807001B3D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6289C721D266807001B3D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FECBEB1D2FF067009671D1 /* LTPickerView.swift in Sources */,
+				A6D25B741D2F9BDE00821227 /* AttributedString.m in Sources */,
+				A6FECBEC1D2FF067009671D1 /* LTDatePickerModel.swift in Sources */,
+				A6FECBEE1D2FF067009671D1 /* LTPickerViewModel.swift in Sources */,
+				A6FECBED1D2FF067009671D1 /* LTPickerModel.swift in Sources */,
+				A6289C7C1D266807001B3D6D /* ViewController.swift in Sources */,
+				A6289C7A1D266807001B3D6D /* AppDelegate.swift in Sources */,
+				A6FECBF21D2FFC1E009671D1 /* LTBlockAlertView.swift in Sources */,
+				A6FECBF31D2FFC1E009671D1 /* LTBlockButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6289C861D266807001B3D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6289C8F1D266807001B3D6D /* LTPickerViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6289C911D266807001B3D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6289C9A1D266807001B3D6D /* LTPickerViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6289C8C1D266807001B3D6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6289C751D266807001B3D6D /* LTPickerView */;
+			targetProxy = A6289C8B1D266807001B3D6D /* PBXContainerItemProxy */;
+		};
+		A6289C971D266807001B3D6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6289C751D266807001B3D6D /* LTPickerView */;
+			targetProxy = A6289C961D266807001B3D6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6289C7D1D266807001B3D6D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6289C7E1D266807001B3D6D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6289C821D266807001B3D6D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6289C831D266807001B3D6D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6289C9C1D266807001B3D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6289C9D1D266807001B3D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6289C9F1D266807001B3D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = LTPickerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devtao.LTPickerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LTPickerView/LTPickerView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6289CA01D266807001B3D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = LTPickerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devtao.LTPickerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LTPickerView/LTPickerView-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		A6289CA21D266807001B3D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LTPickerViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devtao.LTPickerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LTPickerView.app/LTPickerView";
+			};
+			name = Debug;
+		};
+		A6289CA31D266807001B3D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LTPickerViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devtao.LTPickerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LTPickerView.app/LTPickerView";
+			};
+			name = Release;
+		};
+		A6289CA51D266807001B3D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LTPickerViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devtao.LTPickerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LTPickerView;
+			};
+			name = Debug;
+		};
+		A6289CA61D266807001B3D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LTPickerViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.devtao.LTPickerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LTPickerView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6289C711D266807001B3D6D /* Build configuration list for PBXProject "LTPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6289C9C1D266807001B3D6D /* Debug */,
+				A6289C9D1D266807001B3D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6289C9E1D266807001B3D6D /* Build configuration list for PBXNativeTarget "LTPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6289C9F1D266807001B3D6D /* Debug */,
+				A6289CA01D266807001B3D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6289CA11D266807001B3D6D /* Build configuration list for PBXNativeTarget "LTPickerViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6289CA21D266807001B3D6D /* Debug */,
+				A6289CA31D266807001B3D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6289CA41D266807001B3D6D /* Build configuration list for PBXNativeTarget "LTPickerViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6289CA51D266807001B3D6D /* Debug */,
+				A6289CA61D266807001B3D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6289C6E1D266807001B3D6D /* Project object */;
+}
