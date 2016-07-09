@@ -1,6 +1,6 @@
 # LTPickerView
 
-### VERSION 1.0.0
+### VERSION 1.0.1
 ### Swift 2.2
 ### TIME 2016-07-08 22:54:29
 ### Create By 老陶
@@ -63,3 +63,13 @@
        }) { (pickerView) in
            
    	}
+   	
+### 版本更新
+####V1.0.0
+
+First Version
+	
+####V1.0.1
+
+增加时间选择器，默认选中时间功能
+	

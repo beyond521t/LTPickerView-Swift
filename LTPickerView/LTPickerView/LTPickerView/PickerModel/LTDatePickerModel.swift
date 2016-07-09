@@ -20,12 +20,14 @@ class LTDatePickerModel: NSObject {
     
     //MARK: >> 创建 UIDatePicker
     /** 创建 UIDatePicker */
-    func createDateView(superView: UIView, datePickerMode: UIDatePickerMode) -> UIDatePicker {
+    func createDateView(superView: UIView, date: NSDate, datePickerMode: UIDatePickerMode) -> UIDatePicker {
         
         dateMode = datePickerMode
         
         let datePicker = UIDatePicker(frame: (frame: CGRectMake(0, pickerScreenHeight - pickerControllerHeight, pickerScreenWidth, pickerControllerHeight)))
         datePicker.locale = NSLocale(localeIdentifier: "zh_CN")
+        //设置默认选中时间
+        datePicker.date = date
         //设置最小时间值。目前为 1901-1-1 00:00:00
         datePicker.minimumDate = NSDate(timeIntervalSince1970: -2177481600)
         datePicker.datePickerMode = datePickerMode

@@ -111,7 +111,7 @@ class LTPickerViewModel: NSObject, UIPickerViewDataSource, UIPickerViewDelegate 
             let element = dataSource[component] as! [AnyObject]
             return element[row].description
         }
-        return dataSource[component].description
+        return dataSource[row].description
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -145,22 +145,26 @@ class LTPickerViewModel: NSObject, UIPickerViewDataSource, UIPickerViewDelegate 
             return
         }
         
-        let element = dataSource[component] as! [AnyObject]
-        //判断是否有空数组， 空的 使用 "" 代替默认值
-        let result = element.count > 0 ? element[row] : ""
-        switch component {
-        case 0:
-            resultValue.first = result
-        case 1:
-            resultValue.second = result
-        case 2:
-            resultValue.third = result
-        case 3:
-            resultValue.fourth = result
-        default:
-            resultValue.fifth = result
+        if elementMode == LTPickerElementMode.Array {
+            let element = dataSource[component] as! [AnyObject]
+            //判断是否有空数组， 空的 使用 "" 代替默认值
+            let result = element.count > 0 ? element[row] : ""
+            switch component {
+            case 0:
+                resultValue.first = result
+            case 1:
+                resultValue.second = result
+            case 2:
+                resultValue.third = result
+            case 3:
+                resultValue.fourth = result
+            default:
+                resultValue.fifth = result
+            }
+        }else {
+            resultValue.first = dataSource[row]
         }
-//        print("\(resultValue)")
+        
     }
 }
 

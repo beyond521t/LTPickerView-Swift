@@ -5,7 +5,7 @@
 //  Created by LaoTao on 16/7/1.
 //  Copyright © 2016年 LaoTao. All rights reserved.
 //
-//  Version 1.0.0
+//  Version 1.0.1
 //  Swift 2.2
 //  2016-07-08 16:01:41
 //  email: tao_baitong@163.com
@@ -58,7 +58,7 @@ class LTPickerView: UIView {
     //时间的pickerView
     class func datePickerView(date: NSDate, datePickerMode: UIDatePickerMode, title: String) -> LTPickerView {
         let pickerView = LTPickerView()
-        pickerView.customDatePicker(datePickerMode)
+        pickerView.customDatePicker(date, datePickerMode: datePickerMode)
         return pickerView
     }
     
@@ -75,10 +75,10 @@ class LTPickerView: UIView {
         pickerViewModel?.createPickerView(self, data: data)
     }
 
-    private func customDatePicker(datePickerMode: UIDatePickerMode) -> Void {
+    private func customDatePicker(date: NSDate, datePickerMode: UIDatePickerMode) -> Void {
         customUI()
         dateModel = LTDatePickerModel()
-        dateModel?.createDateView(self, datePickerMode: datePickerMode)
+        dateModel?.createDateView(self, date: date, datePickerMode: datePickerMode)
     }
     
     private func customUI() -> Void {
