@@ -22,7 +22,7 @@ class LTPickerViewModel: NSObject, UIPickerViewDataSource, UIPickerViewDelegate 
     /** 当前所选类型 */
     private var elementMode: LTPickerElementMode = LTPickerElementMode.Value
     
-    var pickerView: UIPickerView!
+    private var pickerView: UIPickerView!
     
     /** 回调值 */
     var resultValue: pickerResultType = (first: "", second: "", third: "", fourth: "", fifth: "")
@@ -39,11 +39,23 @@ class LTPickerViewModel: NSObject, UIPickerViewDataSource, UIPickerViewDelegate 
         pickerView.backgroundColor = UIColor.whiteColor()
         pickerView.delegate = self
         pickerView.dataSource = self
+        
+        setDefaultSelectValue()
         return pickerView
+    }
+    
+    //MARK: >> 设置默认选中值
+    private func setDefaultSelectValue() -> Void {
+        if elementMode == LTPickerElementMode.Array {
+            setSelectedRows((0, 0, 0, 0, 0))
+        }else {
+            setSelectedRow(0)
+        }
     }
     
     func setSelectedRow(row: Int) -> Void {
         if row < dataSource.count {
+            resultValue.first = dataSource[row]
             pickerView.selectRow(row, inComponent: 0, animated: true)
         }
     }
@@ -60,30 +72,35 @@ class LTPickerViewModel: NSObject, UIPickerViewDataSource, UIPickerViewDelegate 
         if dataSource.count > 0 {
             let element = dataSource[0] as! [AnyObject]
             if selectRows.first < element.count {
+                resultValue.first = element[selectRows.first]
                 pickerView.selectRow(selectRows.first, inComponent: 0, animated: true)
             }
         }
         if dataSource.count > 1 {
             let element = dataSource[1] as! [AnyObject]
             if selectRows.second < element.count {
+                resultValue.second = element[selectRows.second]
                 pickerView.selectRow(selectRows.second, inComponent: 1, animated: true)
             }
         }
         if dataSource.count > 2 {
             let element = dataSource[2] as! [AnyObject]
             if selectRows.third < element.count {
+                resultValue.third = element[selectRows.third]
                 pickerView.selectRow(selectRows.third, inComponent: 2, animated: true)
             }
         }
         if dataSource.count > 3 {
             let element = dataSource[3] as! [AnyObject]
             if selectRows.fourth < element.count {
+                resultValue.fourth = element[selectRows.fourth]
                 pickerView.selectRow(selectRows.fourth, inComponent: 3, animated: true)
             }
         }
         if dataSource.count > 4 {
             let element = dataSource[4] as! [AnyObject]
             if selectRows.fifth < element.count {
+                resultValue.fifth = element[selectRows.fifth]
                 pickerView.selectRow(selectRows.fifth, inComponent: 4, animated: true)
             }
         }
@@ -99,8 +116,13 @@ class LTPickerViewModel: NSObject, UIPickerViewDataSource, UIPickerViewDelegate 
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if elementMode == .Array {
-            for item in dataSource {
-                return (item as! [AnyObject]).count
+            if component >= dataSource.count {
+                return 0
+            }
+            
+            if elementMode == LTPickerElementMode.Array {
+                let element = dataSource[component] as! [AnyObject]
+                return element.count
             }
         }
         return dataSource.count
@@ -148,7 +170,7 @@ class LTPickerViewModel: NSObject, UIPickerViewDataSource, UIPickerViewDelegate 
         if elementMode == LTPickerElementMode.Array {
             let element = dataSource[component] as! [AnyObject]
             //判断是否有空数组， 空的 使用 "" 代替默认值
-            let result = element.count > 0 ? element[row] : ""
+            let result = element[row]
             switch component {
             case 0:
                 resultValue.first = result
@@ -161,6 +183,7 @@ class LTPickerViewModel: NSObject, UIPickerViewDataSource, UIPickerViewDelegate 
             default:
                 resultValue.fifth = result
             }
+            print("\(resultValue)")
         }else {
             resultValue.first = dataSource[row]
         }
