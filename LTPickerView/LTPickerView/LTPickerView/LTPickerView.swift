@@ -51,7 +51,7 @@ class LTPickerView: UIView {
     class func pickerView(data: [AnyObject], title: String) -> LTPickerView {
         let pickerView = LTPickerView()
         pickerView.customPickerView(data)
-        
+        pickerView.toolCenterLabel.text = title
         return pickerView
     }
     
@@ -59,6 +59,7 @@ class LTPickerView: UIView {
     class func datePickerView(date: NSDate, datePickerMode: UIDatePickerMode, title: String) -> LTPickerView {
         let pickerView = LTPickerView()
         pickerView.customDatePicker(date, datePickerMode: datePickerMode)
+        pickerView.toolCenterLabel.text = title
         return pickerView
     }
     
