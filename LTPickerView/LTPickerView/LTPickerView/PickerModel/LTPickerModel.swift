@@ -56,7 +56,7 @@ class LTPickerModel: NSObject {
         //追加间距对象UIBarButtonSystemItemFlexibleSpace
         let centerSpate = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
         
-        toolCenterLabel.frame = CGRectMake((UIScreen.mainScreen().bounds.size.width - 200) / 2, 10, 200, 20)
+        toolCenterLabel.frame = CGRectMake((UIScreen.mainScreen().bounds.size.width - 200) / 2, 0, 200, pickerToolbarHeight)
         toolCenterLabel.text = "LTPickerView"
         toolCenterLabel.textAlignment = NSTextAlignment.Center
         toolCenterLabel.font = UIFont.systemFontOfSize(14)

@@ -22,7 +22,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="VYl-GA-guK"/>
                                 </constraints>
-                                <state key="normal" title="[String]()"/>
+                                <state key="normal" title="[String]()">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="stringArrayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qaT-8U-yFJ"/>
                                 </connections>

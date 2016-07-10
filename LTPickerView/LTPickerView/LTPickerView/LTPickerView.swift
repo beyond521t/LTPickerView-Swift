@@ -51,6 +51,7 @@ class LTPickerView: UIView {
     class func pickerView(data: [AnyObject], title: String) -> LTPickerView {
         let pickerView = LTPickerView()
         pickerView.customPickerView(data)
+        //设置 toolBar 的 title
         pickerView.toolCenterLabel.text = title
         return pickerView
     }
@@ -59,6 +60,7 @@ class LTPickerView: UIView {
     class func datePickerView(date: NSDate, datePickerMode: UIDatePickerMode, title: String) -> LTPickerView {
         let pickerView = LTPickerView()
         pickerView.customDatePicker(date, datePickerMode: datePickerMode)
+        //设置 toolBar 的 title
         pickerView.toolCenterLabel.text = title
         return pickerView
     }
